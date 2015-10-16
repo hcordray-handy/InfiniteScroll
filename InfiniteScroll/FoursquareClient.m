@@ -66,7 +66,7 @@
     return [queryString substringFromIndex:1];
 }
 
-- (void)getVenuesNearLatitude:(float)latitude longitude:(float)longitude limit:(int)limit offset:(int)offset callback:(void (^)(NSArray *, NSError *))callback {
+- (NSURLSessionTask *)getVenuesNearLatitude:(float)latitude longitude:(float)longitude limit:(int)limit offset:(int)offset callback:(void (^)(NSArray *, NSError *))callback {
     NSMutableDictionary *params = [self defaultParams];
     [params setObject:[NSString stringWithFormat:@"%f,%f", latitude, longitude] forKey:@"ll"];
     [params setObject:[NSNumber numberWithInt:offset] forKey:@"offset"];
@@ -77,9 +77,8 @@
     // return back task that can be cancelled, and can use task instead of having a loading flag (if pending request, ...)
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    return [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) callback(nil, error);
-        
         
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         NSMutableArray *venues = [[NSMutableArray alloc] init];
@@ -92,7 +91,7 @@
         }
         
         callback(venues, nil);
-    }] resume];
+    }];
 }
 
 @end

@@ -19,7 +19,7 @@
     int _limit;
     
     NSMutableArray *_venues;
-    BOOL _loading;
+    NSURLSessionTask *_task;
     BOOL _done;
 }
 @end
@@ -40,14 +40,12 @@
 }
 
 - (void)loadVenues {
-    if (_loading || _done) return;
-    
-    _loading = YES;
+    if (_task || _done) return;
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     __weak typeof (self) weakSelf = self;
-    [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
+    _task = [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
   
         VenuesViewController *strongSelf = weakSelf;
@@ -66,8 +64,10 @@
             strongSelf->_done = YES;
         }
         
-        strongSelf->_loading = NO;
+        strongSelf->_task = nil;
     }];
+    
+    [_task resume];
 }
 
 - (void)setupSubviews {

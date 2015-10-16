@@ -12,6 +12,6 @@
 
 + (FoursquareClient *)sharedInstance;
 
-- (void)getVenuesNearLatitude:(float)latitude longitude:(float)longitude limit:(int)limit offset:(int)offset callback:(void (^)(NSArray *, NSError *))callback;
+- (NSURLSessionTask *)getVenuesNearLatitude:(float)latitude longitude:(float)longitude limit:(int)limit offset:(int)offset callback:(void (^)(NSArray *, NSError *))callback;
 
 @end
