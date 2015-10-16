@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069224D5DBE02209E222C4A9 /* libPods-InfiniteScrollTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5BCA610063667B1EB3848A /* libPods-InfiniteScrollTests.a */; };
+		259C92911BD00724006E3832 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C92901BD00724006E3832 /* CFNetwork.framework */; };
+		259C92931BD0072D006E3832 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C92921BD0072D006E3832 /* CoreData.framework */; };
+		259C92951BD00733006E3832 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C92941BD00733006E3832 /* MobileCoreServices.framework */; };
+		259C92971BD00738006E3832 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C92961BD00738006E3832 /* Security.framework */; };
+		259C92991BD0073D006E3832 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259C92981BD0073D006E3832 /* SystemConfiguration.framework */; };
+		259C929C1BD01B99006E3832 /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C929B1BD01B99006E3832 /* VenueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		259C929F1BD01D87006E3832 /* FoursquareVenuePrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C929E1BD01D87006E3832 /* FoursquareVenuePrice.m */; settings = {ASSET_TAGS = (); }; };
+		259C92A11BD0267C006E3832 /* VenuesViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C92A01BD0267C006E3832 /* VenuesViewControllerTest.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15771BCFEAF2001D7C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15761BCFEAF2001D7C1C /* main.m */; };
 		25EA157A1BCFEAF2001D7C1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15791BCFEAF2001D7C1C /* AppDelegate.m */; };
-		25EA157D1BCFEAF2001D7C1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA157C1BCFEAF2001D7C1C /* ViewController.m */; };
 		25EA15801BCFEAF2001D7C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EA157E1BCFEAF2001D7C1C /* Main.storyboard */; };
 		25EA15821BCFEAF2001D7C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EA15811BCFEAF2001D7C1C /* Assets.xcassets */; };
 		25EA15851BCFEAF2001D7C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EA15831BCFEAF2001D7C1C /* LaunchScreen.storyboard */; };
-		25EA15901BCFEAF2001D7C1C /* InfiniteScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA158F1BCFEAF2001D7C1C /* InfiniteScrollTests.m */; };
 		25EA159B1BCFEAF2001D7C1C /* InfiniteScrollUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA159A1BCFEAF2001D7C1C /* InfiniteScrollUITests.m */; };
+		25EA15AD1BCFECEC001D7C1C /* FoursquareClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15B01BCFECF5001D7C1C /* FoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15AF1BCFECF5001D7C1C /* FoursquareVenue.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15B31BCFED04001D7C1C /* VenuesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B21BCFED04001D7C1C /* VenuesView.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15B61BCFED12001D7C1C /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B51BCFED12001D7C1C /* VenuesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15BC1BCFF67C001D7C1C /* FoursquareGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15C31BCFF7A2001D7C1C /* MappingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15C21BCFF7A2001D7C1C /* MappingManager.m */; settings = {ASSET_TAGS = (); }; };
+		25EA15C61BCFF8E3001D7C1C /* FoursquareResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15C51BCFF8E3001D7C1C /* FoursquareResponse.m */; settings = {ASSET_TAGS = (); }; };
+		598734682F6CABD8EC67E0F6 /* libPods-InfiniteScroll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A91BE2201903E4ADCCB30763 /* libPods-InfiniteScroll.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +51,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259C928F1BD00550006E3832 /* InfiniteScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfiniteScroll-Prefix.pch"; sourceTree = "<group>"; };
+		259C92901BD00724006E3832 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		259C92921BD0072D006E3832 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		259C92941BD00733006E3832 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		259C92961BD00738006E3832 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		259C92981BD0073D006E3832 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		259C929A1BD01B99006E3832 /* VenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
+		259C929B1BD01B99006E3832 /* VenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
+		259C929D1BD01D87006E3832 /* FoursquareVenuePrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareVenuePrice.h; sourceTree = "<group>"; };
+		259C929E1BD01D87006E3832 /* FoursquareVenuePrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareVenuePrice.m; sourceTree = "<group>"; };
+		259C92A01BD0267C006E3832 /* VenuesViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesViewControllerTest.m; sourceTree = "<group>"; };
 		25EA15721BCFEAF2001D7C1C /* InfiniteScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EA15761BCFEAF2001D7C1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25EA15781BCFEAF2001D7C1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25EA15791BCFEAF2001D7C1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		25EA157B1BCFEAF2001D7C1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25EA157C1BCFEAF2001D7C1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		25EA157F1BCFEAF2001D7C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25EA15811BCFEAF2001D7C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25EA15841BCFEAF2001D7C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25EA15861BCFEAF2001D7C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EA158B1BCFEAF2001D7C1C /* InfiniteScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EA158F1BCFEAF2001D7C1C /* InfiniteScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollTests.m; sourceTree = "<group>"; };
 		25EA15911BCFEAF2001D7C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EA15961BCFEAF2001D7C1C /* InfiniteScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EA159A1BCFEAF2001D7C1C /* InfiniteScrollUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollUITests.m; sourceTree = "<group>"; };
 		25EA159C1BCFEAF2001D7C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25EA15AB1BCFECEC001D7C1C /* FoursquareClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareClient.h; sourceTree = "<group>"; };
+		25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareClient.m; sourceTree = "<group>"; };
+		25EA15AE1BCFECF5001D7C1C /* FoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareVenue.h; sourceTree = "<group>"; };
+		25EA15AF1BCFECF5001D7C1C /* FoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareVenue.m; sourceTree = "<group>"; };
+		25EA15B11BCFED04001D7C1C /* VenuesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesView.h; sourceTree = "<group>"; };
+		25EA15B21BCFED04001D7C1C /* VenuesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesView.m; sourceTree = "<group>"; };
+		25EA15B41BCFED12001D7C1C /* VenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesViewController.h; sourceTree = "<group>"; };
+		25EA15B51BCFED12001D7C1C /* VenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesViewController.m; sourceTree = "<group>"; };
+		25EA15B71BCFF5BD001D7C1C /* FoursquareGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareGroup.h; sourceTree = "<group>"; };
+		25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareGroup.m; sourceTree = "<group>"; };
+		25EA15BA1BCFF67C001D7C1C /* FoursquareGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareGroupItem.h; sourceTree = "<group>"; };
+		25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareGroupItem.m; sourceTree = "<group>"; };
+		25EA15C11BCFF7A2001D7C1C /* MappingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingManager.h; sourceTree = "<group>"; };
+		25EA15C21BCFF7A2001D7C1C /* MappingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingManager.m; sourceTree = "<group>"; };
+		25EA15C41BCFF8E3001D7C1C /* FoursquareResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareResponse.h; sourceTree = "<group>"; };
+		25EA15C51BCFF8E3001D7C1C /* FoursquareResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareResponse.m; sourceTree = "<group>"; };
+		6303E9FD4D699FDCBC4A128E /* Pods-InfiniteScrollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollTests/Pods-InfiniteScrollTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B933C5E390476FD9810D89B /* Pods-InfiniteScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScroll/Pods-InfiniteScroll.debug.xcconfig"; sourceTree = "<group>"; };
+		99012530B396F72F3A02821F /* Pods-InfiniteScrollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollTests/Pods-InfiniteScrollTests.release.xcconfig"; sourceTree = "<group>"; };
+		A017FD971EFC6383CA632AAE /* Pods-InfiniteScroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScroll.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScroll/Pods-InfiniteScroll.release.xcconfig"; sourceTree = "<group>"; };
+		A91BE2201903E4ADCCB30763 /* libPods-InfiniteScroll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteScroll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5BCA610063667B1EB3848A /* libPods-InfiniteScrollTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteScrollTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259C92991BD0073D006E3832 /* SystemConfiguration.framework in Frameworks */,
+				259C92971BD00738006E3832 /* Security.framework in Frameworks */,
+				259C92951BD00733006E3832 /* MobileCoreServices.framework in Frameworks */,
+				259C92931BD0072D006E3832 /* CoreData.framework in Frameworks */,
+				259C92911BD00724006E3832 /* CFNetwork.framework in Frameworks */,
+				598734682F6CABD8EC67E0F6 /* libPods-InfiniteScroll.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069224D5DBE02209E222C4A9 /* libPods-InfiniteScrollTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +138,8 @@
 				25EA158E1BCFEAF2001D7C1C /* InfiniteScrollTests */,
 				25EA15991BCFEAF2001D7C1C /* InfiniteScrollUITests */,
 				25EA15731BCFEAF2001D7C1C /* Products */,
+				280C0EB2E5FF98F4A2F99E3F /* Pods */,
+				949F462F8C971161BC0C5BAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +158,10 @@
 			children = (
 				25EA15781BCFEAF2001D7C1C /* AppDelegate.h */,
 				25EA15791BCFEAF2001D7C1C /* AppDelegate.m */,
-				25EA157B1BCFEAF2001D7C1C /* ViewController.h */,
-				25EA157C1BCFEAF2001D7C1C /* ViewController.m */,
+				25EA15BF1BCFF6A6001D7C1C /* View Controllers */,
+				25EA15BE1BCFF6A2001D7C1C /* Views */,
+				25EA15BD1BCFF699001D7C1C /* Models */,
+				25EA15C01BCFF6AD001D7C1C /* Utilities */,
 				25EA157E1BCFEAF2001D7C1C /* Main.storyboard */,
 				25EA15811BCFEAF2001D7C1C /* Assets.xcassets */,
 				25EA15831BCFEAF2001D7C1C /* LaunchScreen.storyboard */,
@@ -118,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				25EA15761BCFEAF2001D7C1C /* main.m */,
+				259C928F1BD00550006E3832 /* InfiniteScroll-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,8 +183,8 @@
 		25EA158E1BCFEAF2001D7C1C /* InfiniteScrollTests */ = {
 			isa = PBXGroup;
 			children = (
-				25EA158F1BCFEAF2001D7C1C /* InfiniteScrollTests.m */,
 				25EA15911BCFEAF2001D7C1C /* Info.plist */,
+				259C92A01BD0267C006E3832 /* VenuesViewControllerTest.m */,
 			);
 			path = InfiniteScrollTests;
 			sourceTree = "<group>";
@@ -140,6 +198,79 @@
 			path = InfiniteScrollUITests;
 			sourceTree = "<group>";
 		};
+		25EA15BD1BCFF699001D7C1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25EA15AE1BCFECF5001D7C1C /* FoursquareVenue.h */,
+				25EA15AF1BCFECF5001D7C1C /* FoursquareVenue.m */,
+				25EA15B71BCFF5BD001D7C1C /* FoursquareGroup.h */,
+				25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */,
+				25EA15BA1BCFF67C001D7C1C /* FoursquareGroupItem.h */,
+				25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */,
+				25EA15C41BCFF8E3001D7C1C /* FoursquareResponse.h */,
+				25EA15C51BCFF8E3001D7C1C /* FoursquareResponse.m */,
+				259C929D1BD01D87006E3832 /* FoursquareVenuePrice.h */,
+				259C929E1BD01D87006E3832 /* FoursquareVenuePrice.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		25EA15BE1BCFF6A2001D7C1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25EA15B11BCFED04001D7C1C /* VenuesView.h */,
+				25EA15B21BCFED04001D7C1C /* VenuesView.m */,
+				259C929A1BD01B99006E3832 /* VenueTableViewCell.h */,
+				259C929B1BD01B99006E3832 /* VenueTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		25EA15BF1BCFF6A6001D7C1C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25EA15B41BCFED12001D7C1C /* VenuesViewController.h */,
+				25EA15B51BCFED12001D7C1C /* VenuesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		25EA15C01BCFF6AD001D7C1C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				25EA15AB1BCFECEC001D7C1C /* FoursquareClient.h */,
+				25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */,
+				25EA15C11BCFF7A2001D7C1C /* MappingManager.h */,
+				25EA15C21BCFF7A2001D7C1C /* MappingManager.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		280C0EB2E5FF98F4A2F99E3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B933C5E390476FD9810D89B /* Pods-InfiniteScroll.debug.xcconfig */,
+				A017FD971EFC6383CA632AAE /* Pods-InfiniteScroll.release.xcconfig */,
+				6303E9FD4D699FDCBC4A128E /* Pods-InfiniteScrollTests.debug.xcconfig */,
+				99012530B396F72F3A02821F /* Pods-InfiniteScrollTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		949F462F8C971161BC0C5BAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				259C92981BD0073D006E3832 /* SystemConfiguration.framework */,
+				259C92961BD00738006E3832 /* Security.framework */,
+				259C92941BD00733006E3832 /* MobileCoreServices.framework */,
+				259C92921BD0072D006E3832 /* CoreData.framework */,
+				259C92901BD00724006E3832 /* CFNetwork.framework */,
+				A91BE2201903E4ADCCB30763 /* libPods-InfiniteScroll.a */,
+				EF5BCA610063667B1EB3848A /* libPods-InfiniteScrollTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25EA159F1BCFEAF2001D7C1C /* Build configuration list for PBXNativeTarget "InfiniteScroll" */;
 			buildPhases = (
+				C043CA45CECD4FDE03FD1975 /* Check Pods Manifest.lock */,
 				25EA156E1BCFEAF2001D7C1C /* Sources */,
 				25EA156F1BCFEAF2001D7C1C /* Frameworks */,
 				25EA15701BCFEAF2001D7C1C /* Resources */,
+				4DFB99A452F67EE32B76E777 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25EA15A21BCFEAF2001D7C1C /* Build configuration list for PBXNativeTarget "InfiniteScrollTests" */;
 			buildPhases = (
+				29EC68D0FDB5610A5F572262 /* Check Pods Manifest.lock */,
 				25EA15871BCFEAF2001D7C1C /* Sources */,
 				25EA15881BCFEAF2001D7C1C /* Frameworks */,
 				25EA15891BCFEAF2001D7C1C /* Resources */,
+				159571246237B47FB29B9CB6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +400,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		159571246237B47FB29B9CB6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollTests/Pods-InfiniteScrollTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29EC68D0FDB5610A5F572262 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DFB99A452F67EE32B76E777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScroll/Pods-InfiniteScroll-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C043CA45CECD4FDE03FD1975 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25EA156E1BCFEAF2001D7C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EA157D1BCFEAF2001D7C1C /* ViewController.m in Sources */,
+				25EA15B61BCFED12001D7C1C /* VenuesViewController.m in Sources */,
+				25EA15BC1BCFF67C001D7C1C /* FoursquareGroupItem.m in Sources */,
+				25EA15B01BCFECF5001D7C1C /* FoursquareVenue.m in Sources */,
+				25EA15C61BCFF8E3001D7C1C /* FoursquareResponse.m in Sources */,
+				259C929F1BD01D87006E3832 /* FoursquareVenuePrice.m in Sources */,
+				259C929C1BD01B99006E3832 /* VenueTableViewCell.m in Sources */,
+				25EA15AD1BCFECEC001D7C1C /* FoursquareClient.m in Sources */,
 				25EA157A1BCFEAF2001D7C1C /* AppDelegate.m in Sources */,
+				25EA15C31BCFF7A2001D7C1C /* MappingManager.m in Sources */,
+				25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */,
+				25EA15B31BCFED04001D7C1C /* VenuesView.m in Sources */,
 				25EA15771BCFEAF2001D7C1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EA15901BCFEAF2001D7C1C /* InfiniteScrollTests.m in Sources */,
+				259C92A11BD0267C006E3832 /* VenuesViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +618,11 @@
 		};
 		25EA15A01BCFEAF2001D7C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B933C5E390476FD9810D89B /* Pods-InfiniteScroll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScroll/InfiniteScroll-Prefix.pch";
 				INFOPLIST_FILE = InfiniteScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hcordray-handy.InfiniteScroll";
@@ -422,8 +632,11 @@
 		};
 		25EA15A11BCFEAF2001D7C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A017FD971EFC6383CA632AAE /* Pods-InfiniteScroll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InfiniteScroll/InfiniteScroll-Prefix.pch";
 				INFOPLIST_FILE = InfiniteScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hcordray-handy.InfiniteScroll";
@@ -433,6 +646,7 @@
 		};
 		25EA15A31BCFEAF2001D7C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6303E9FD4D699FDCBC4A128E /* Pods-InfiniteScrollTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InfiniteScrollTests/Info.plist;
@@ -445,6 +659,7 @@
 		};
 		25EA15A41BCFEAF2001D7C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99012530B396F72F3A02821F /* Pods-InfiniteScrollTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InfiniteScrollTests/Info.plist;
@@ -498,6 +713,7 @@
 				25EA15A11BCFEAF2001D7C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25EA15A21BCFEAF2001D7C1C /* Build configuration list for PBXNativeTarget "InfiniteScrollTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +722,7 @@
 				25EA15A41BCFEAF2001D7C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25EA15A51BCFEAF2001D7C1C /* Build configuration list for PBXNativeTarget "InfiniteScrollUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +731,7 @@
 				25EA15A71BCFEAF2001D7C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
