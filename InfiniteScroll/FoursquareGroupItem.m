@@ -10,4 +10,14 @@
 
 @implementation FoursquareGroupItem
 
+- (instancetype)initWithSerialization:(NSDictionary *)serialization {
+    self = [super init];
+    
+    if (!self) return nil;
+    
+    _venue = [[FoursquareVenue alloc] initWithSerialization:[serialization objectForKey:@"venue"]];
+    
+    return self;
+}
+
 @end

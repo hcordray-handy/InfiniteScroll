@@ -10,4 +10,15 @@
 
 @implementation FoursquareVenuePrice
 
+- (instancetype)initWithSerialization:(NSDictionary *)serialization {
+    self = [super init];
+    
+    if (!self) return nil;
+    
+    _tier = [(NSNumber *)[serialization objectForKey:@"tier"] intValue];
+    _tierMessage = [serialization objectForKey:@"message"];
+    
+    return self;
+}
+
 @end

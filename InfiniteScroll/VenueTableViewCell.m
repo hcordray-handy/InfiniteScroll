@@ -8,9 +8,10 @@
 
 #import "VenueTableViewCell.h"
 #import <PureLayout/PureLayout.h>
+#import "FoursquareVenue.h"
 
 @interface VenueTableViewCell () {
-    NSDictionary *_venue;
+    FoursquareVenue *_venue;
     
     UILabel *_nameLabel;
     UILabel *_descriptionLabel;
@@ -47,11 +48,11 @@
     [_ratingLabel setTextColor:[UIColor colorWithCGColor:[UIColor blueColor].CGColor]];
 }
 
-- (void)setVenue:(NSDictionary *)venue {
-    _venue = venue;
+- (void)setVenue:(id)venue {
+    _venue = (FoursquareVenue *)venue;
     
-    _nameLabel.text = [_venue objectForKey:@"name"];
-    _ratingLabel.text = [NSString stringWithFormat:@"%i", [(NSNumber *)[(NSDictionary *)[_venue objectForKey:@"price"] objectForKey:@"tier"] intValue]];
+    _nameLabel.text = _venue.name;
+    _ratingLabel.text = [NSString stringWithFormat:@"%i", _venue.price.tier];
 }
 
 @end

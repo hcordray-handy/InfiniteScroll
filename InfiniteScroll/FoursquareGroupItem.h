@@ -11,6 +11,8 @@
 
 @interface FoursquareGroupItem : NSObject
 
-@property (nonatomic, strong) FoursquareVenue *venue;
+@property (nonatomic, readonly, strong) FoursquareVenue *venue;
+
+- (instancetype)initWithSerialization:(NSDictionary *)serialization;
 
 @end

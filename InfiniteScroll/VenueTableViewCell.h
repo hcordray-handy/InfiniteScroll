@@ -10,6 +10,6 @@
 
 @interface VenueTableViewCell : UITableViewCell
 
-- (void)setVenue:(NSDictionary *)venue;
+- (void)setVenue:(id)venue;
 
 @end

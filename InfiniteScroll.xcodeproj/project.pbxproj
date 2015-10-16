@@ -24,7 +24,6 @@
 		25EA159B1BCFEAF2001D7C1C /* InfiniteScrollUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA159A1BCFEAF2001D7C1C /* InfiniteScrollUITests.m */; };
 		25EA15AD1BCFECEC001D7C1C /* FoursquareClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15B01BCFECF5001D7C1C /* FoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15AF1BCFECF5001D7C1C /* FoursquareVenue.m */; settings = {ASSET_TAGS = (); }; };
-		25EA15B31BCFED04001D7C1C /* VenuesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B21BCFED04001D7C1C /* VenuesView.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15B61BCFED12001D7C1C /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B51BCFED12001D7C1C /* VenuesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15BC1BCFF67C001D7C1C /* FoursquareGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */; settings = {ASSET_TAGS = (); }; };
@@ -78,8 +77,6 @@
 		25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareClient.m; sourceTree = "<group>"; };
 		25EA15AE1BCFECF5001D7C1C /* FoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareVenue.h; sourceTree = "<group>"; };
 		25EA15AF1BCFECF5001D7C1C /* FoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareVenue.m; sourceTree = "<group>"; };
-		25EA15B11BCFED04001D7C1C /* VenuesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesView.h; sourceTree = "<group>"; };
-		25EA15B21BCFED04001D7C1C /* VenuesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesView.m; sourceTree = "<group>"; };
 		25EA15B41BCFED12001D7C1C /* VenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesViewController.h; sourceTree = "<group>"; };
 		25EA15B51BCFED12001D7C1C /* VenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesViewController.m; sourceTree = "<group>"; };
 		25EA15B71BCFF5BD001D7C1C /* FoursquareGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareGroup.h; sourceTree = "<group>"; };
@@ -215,8 +212,6 @@
 		25EA15BE1BCFF6A2001D7C1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25EA15B11BCFED04001D7C1C /* VenuesView.h */,
-				25EA15B21BCFED04001D7C1C /* VenuesView.m */,
 				259C929A1BD01B99006E3832 /* VenueTableViewCell.h */,
 				259C929B1BD01B99006E3832 /* VenueTableViewCell.m */,
 			);
@@ -472,7 +467,6 @@
 				25EA15AD1BCFECEC001D7C1C /* FoursquareClient.m in Sources */,
 				25EA157A1BCFEAF2001D7C1C /* AppDelegate.m in Sources */,
 				25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */,
-				25EA15B31BCFED04001D7C1C /* VenuesView.m in Sources */,
 				25EA15771BCFEAF2001D7C1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,9 @@
 
 @interface FoursquareVenuePrice : NSObject
 
-@property (nonatomic) NSInteger tier;
-@property (nonatomic, strong) NSString *tierMessage;
+@property (nonatomic, readonly) int tier;
+@property (nonatomic, readonly, strong) NSString *tierMessage;
+
+- (instancetype)initWithSerialization:(NSDictionary *)serialization;
 
 @end

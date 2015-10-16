@@ -8,9 +8,11 @@
 
 #import "VenuesViewController.h"
 #import "FoursquareClient.h"
+#import "VenueTableViewCell.h"
+#import <PureLayout/PureLayout.h>
 
 @interface VenuesViewController () {
-    VenuesView *_venuesView;
+    UITableView *_tableView;
     FoursquareClient *_client;
     
     int _offset;
@@ -26,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupSubviews];
 
     _client = [FoursquareClient sharedInstance];
     _venues = [[NSMutableArray alloc] init];
@@ -35,12 +39,6 @@
     [self loadVenues];
 }
 
-- (void)loadView {
-    _venuesView = [[VenuesView alloc] init];
-    _venuesView.venuesViewDelegate = self;
-    self.view = _venuesView;
-}
-
 - (void)loadVenues {
     if (_loading || _done) return;
     
@@ -48,6 +46,10 @@
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
+        
+        // these ivars still require retain of self (self->_done)
+        // make it safe with weak reference to self
+        
         if (error) {
             _done = YES;
         } else if (results.count) {
@@ -55,7 +57,7 @@
             _offset += results.count;
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [_venuesView refresh];
+                [self refresh];
             });
         } else {
             _done = YES;
@@ -66,16 +68,44 @@
     }];
 }
 
-- (NSArray *)venues {
-    return _venues;
+- (void)setupSubviews {
+    _tableView = [[UITableView alloc] initForAutoLayout];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [_tableView registerClass:[VenueTableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    [self.view addSubview:_tableView];
+    [_tableView autoPinEdgesToSuperviewEdges];
 }
 
-- (BOOL)loading {
-    return _loading;
+- (void)refresh {
+    [_tableView reloadData];
 }
 
-- (BOOL)done {
-    return _done;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_venues count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    VenueTableViewCell *cell = (VenueTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if (cell == nil) {
+        cell = [[VenueTableViewCell alloc] init];
+    }
+    
+    [cell setVenue:[_venues objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row >= [_venues count] - 5) {
+        [self loadVenues];
+    }
 }
 
 @end

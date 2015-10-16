@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VenuesView.h"
 
-@interface VenuesViewController : UIViewController <VenuesViewDelegate>
+@interface VenuesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FoursquareGroup.h"
 
 @interface FoursquareResponse : NSObject
 
-@property (nonatomic, strong) NSArray *groups;
+@property (nonatomic, readonly, strong) NSArray *groups;
+
+- (instancetype)initWithSerialization:(NSDictionary *)serialization;
 
 @end

@@ -10,6 +10,20 @@
 
 @implementation FoursquareResponse
 
+- (instancetype)initWithSerialization:(NSDictionary *)serialization {
+    self = [super init];
+    
+    if (!self) return nil;
+    
+    NSMutableArray *groups = [[NSMutableArray alloc] init];
+    for (NSDictionary *group in [serialization objectForKey:@"groups"]) {
+        [groups addObject:[[FoursquareGroup alloc] initWithSerialization:group]];
+    }
+    
+    _groups = groups;
+    
+    return self;
+}
 
 @end
 

@@ -11,12 +11,14 @@
 
 @interface FoursquareVenue : NSObject
 
-@property (nonatomic) NSInteger foursquareId;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic) BOOL verified;
-@property (nonatomic, strong) NSString *url;
-@property (nonatomic) NSInteger rating;
-@property (nonatomic, strong) NSString *foursquareDescription;
-@property (nonatomic, strong) FoursquareVenuePrice *price;
+@property (nonatomic, readonly) NSInteger foursquareId;
+@property (nonatomic, readonly, strong) NSString *name;
+@property (nonatomic, readonly) BOOL verified;
+@property (nonatomic, readonly, strong) NSString *url;
+@property (nonatomic, readonly) NSInteger rating;
+@property (nonatomic, readonly, strong) NSString *foursquareDescription;
+@property (nonatomic, readonly, strong) FoursquareVenuePrice *price;
+
+- (instancetype)initWithSerialization:(NSDictionary *)serialization;
 
 @end
