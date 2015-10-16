@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InfiniteScroll.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InfiniteScrollTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>17D400DDEDD20791F0867B915C78C1EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CF857C3F7EEFDF0F7822A2733D7FAFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86AEF70E229A377D49AE699CB5C4C3F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E08FD956A5D569C5F2D91CF83936405A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

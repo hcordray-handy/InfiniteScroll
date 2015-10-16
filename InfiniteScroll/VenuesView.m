@@ -8,8 +8,6 @@
 
 #import "VenuesView.h"
 #import <PureLayout/PureLayout.h>
-#import <SVPullToRefresh/SVPullToRefresh.h>
-#import "FoursquareVenue.h"
 #import "VenueTableViewCell.h"
 
 @interface VenuesView () {
@@ -35,17 +33,11 @@
     _tableView.dataSource = self;
     [_tableView registerClass:[VenueTableViewCell class] forCellReuseIdentifier:@"cell"];
     
-    __unsafe_unretained typeof(self) weakSelf = self;
-    [_tableView addInfiniteScrollingWithActionHandler:^{
-        [weakSelf.venuesViewDelegate loadVenues];
-    }];
-    
     [self addSubview:_tableView];
     [_tableView autoPinEdgesToSuperviewEdges];
 }
 
 - (void)refresh {
-    [_tableView.infiniteScrollingView stopAnimating];
     [_tableView reloadData];
 }
 
@@ -67,6 +59,16 @@
     [cell setVenue:[[self.venuesViewDelegate venues] objectAtIndex:indexPath.row]];
     
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat offset = scrollView.contentOffset.y;
+    CGFloat height = scrollView.contentSize.height;
+    CGFloat fullHeight = [[UIScreen mainScreen] bounds].size.height;
+    
+    if (fullHeight * 1.5 >= height - offset) {
+        [self.venuesViewDelegate loadVenues];
+    }
 }
 
 @end

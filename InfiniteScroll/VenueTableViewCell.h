@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FoursquareVenue.h"
 
 @interface VenueTableViewCell : UITableViewCell
 
-- (void)setVenue:(FoursquareVenue *)venue;
+- (void)setVenue:(NSDictionary *)venue;
 
 @end

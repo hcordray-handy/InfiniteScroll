@@ -28,7 +28,6 @@
 		25EA15B61BCFED12001D7C1C /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B51BCFED12001D7C1C /* VenuesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15BC1BCFF67C001D7C1C /* FoursquareGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */; settings = {ASSET_TAGS = (); }; };
-		25EA15C31BCFF7A2001D7C1C /* MappingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15C21BCFF7A2001D7C1C /* MappingManager.m */; settings = {ASSET_TAGS = (); }; };
 		25EA15C61BCFF8E3001D7C1C /* FoursquareResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EA15C51BCFF8E3001D7C1C /* FoursquareResponse.m */; settings = {ASSET_TAGS = (); }; };
 		598734682F6CABD8EC67E0F6 /* libPods-InfiniteScroll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A91BE2201903E4ADCCB30763 /* libPods-InfiniteScroll.a */; };
 /* End PBXBuildFile section */
@@ -87,8 +86,6 @@
 		25EA15B81BCFF5BD001D7C1C /* FoursquareGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareGroup.m; sourceTree = "<group>"; };
 		25EA15BA1BCFF67C001D7C1C /* FoursquareGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareGroupItem.h; sourceTree = "<group>"; };
 		25EA15BB1BCFF67C001D7C1C /* FoursquareGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareGroupItem.m; sourceTree = "<group>"; };
-		25EA15C11BCFF7A2001D7C1C /* MappingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingManager.h; sourceTree = "<group>"; };
-		25EA15C21BCFF7A2001D7C1C /* MappingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingManager.m; sourceTree = "<group>"; };
 		25EA15C41BCFF8E3001D7C1C /* FoursquareResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareResponse.h; sourceTree = "<group>"; };
 		25EA15C51BCFF8E3001D7C1C /* FoursquareResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareResponse.m; sourceTree = "<group>"; };
 		6303E9FD4D699FDCBC4A128E /* Pods-InfiniteScrollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollTests/Pods-InfiniteScrollTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,8 +237,6 @@
 			children = (
 				25EA15AB1BCFECEC001D7C1C /* FoursquareClient.h */,
 				25EA15AC1BCFECEC001D7C1C /* FoursquareClient.m */,
-				25EA15C11BCFF7A2001D7C1C /* MappingManager.h */,
-				25EA15C21BCFF7A2001D7C1C /* MappingManager.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -476,7 +471,6 @@
 				259C929C1BD01B99006E3832 /* VenueTableViewCell.m in Sources */,
 				25EA15AD1BCFECEC001D7C1C /* FoursquareClient.m in Sources */,
 				25EA157A1BCFEAF2001D7C1C /* AppDelegate.m in Sources */,
-				25EA15C31BCFF7A2001D7C1C /* MappingManager.m in Sources */,
 				25EA15B91BCFF5BD001D7C1C /* FoursquareGroup.m in Sources */,
 				25EA15B31BCFED04001D7C1C /* VenuesView.m in Sources */,
 				25EA15771BCFEAF2001D7C1C /* main.m in Sources */,

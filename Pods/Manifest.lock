@@ -1,0 +1,13 @@
+PODS:
+  - OCMock (3.2)
+  - PureLayout (3.0.1)
+
+DEPENDENCIES:
+  - OCMock
+  - PureLayout
+
+SPEC CHECKSUMS:
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+
+COCOAPODS: 0.38.0
