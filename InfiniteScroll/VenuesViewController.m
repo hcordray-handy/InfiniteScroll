@@ -47,25 +47,23 @@
     _loading = YES;
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
-            if (error) {
-                _done = YES;
-            } else if (results.count) {
-                [_venues addObjectsFromArray:results];
-                _offset += results.count;
-                
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [_venuesView refresh];
-                });
-            } else {
-                _done = YES;
-            }
+    [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
+        if (error) {
+            _done = YES;
+        } else if (results.count) {
+            [_venues addObjectsFromArray:results];
+            _offset += results.count;
             
-            _loading = NO;
-            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        }];
-    });
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_venuesView refresh];
+            });
+        } else {
+            _done = YES;
+        }
+        
+        _loading = NO;
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    }];
 }
 
 - (NSArray *)venues {

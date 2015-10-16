@@ -51,7 +51,7 @@
     _venue = venue;
     
     _nameLabel.text = [_venue objectForKey:@"name"];
-    _ratingLabel.text = [NSString stringWithFormat:@"%i", (int)[(NSDictionary *)[_venue objectForKey:@"price"] objectForKey:@"tier"]];
+    _ratingLabel.text = [NSString stringWithFormat:@"%i", [(NSNumber *)[(NSDictionary *)[_venue objectForKey:@"price"] objectForKey:@"tier"] intValue]];
 }
 
 @end
