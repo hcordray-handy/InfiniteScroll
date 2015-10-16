@@ -45,26 +45,28 @@
     _loading = YES;
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
+    __weak typeof (self) weakSelf = self;
     [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
-        
-        // these ivars still require retain of self (self->_done)
-        // make it safe with weak reference to self
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+  
+        VenuesViewController *strongSelf = weakSelf;
+        if (!strongSelf) return;
         
         if (error) {
-            _done = YES;
+            strongSelf->_done = YES;
         } else if (results.count) {
-            [_venues addObjectsFromArray:results];
-            _offset += results.count;
+            [strongSelf->_venues addObjectsFromArray:results];
+            strongSelf->_offset += results.count;
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self refresh];
+                [strongSelf refresh];
             });
         } else {
-            _done = YES;
+            strongSelf->_done = YES;
         }
         
-        _loading = NO;
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        strongSelf->_loading = NO;
     }];
 }
 

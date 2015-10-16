@@ -24,8 +24,6 @@
 // create implementation of that somewhere, but only register the protocol in the service locator
 // service locator finds the relevant service contract (aka protocol)
 
-// 
-
 + (FoursquareClient *)sharedInstance {
     static dispatch_once_t p = 0;
     
