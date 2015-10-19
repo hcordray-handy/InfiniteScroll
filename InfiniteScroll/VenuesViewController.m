@@ -41,7 +41,7 @@
 }
 
 - (void)loadVenues {
-    if (_task || _done) return;
+    if (self.task || self.done) return;
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
