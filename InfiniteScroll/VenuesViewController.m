@@ -43,8 +43,6 @@
 - (void)loadVenues {
     if (self.task || self.done) return;
     
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    
     __weak typeof (self) weakSelf = self;
     self.task = [_client getVenuesNearLatitude:40.7 longitude:-74 limit:_limit offset:_offset callback:^(NSArray *results, NSError *error) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
@@ -65,6 +63,7 @@
        weakSelf.task = nil;
     }];
     
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [weakSelf.task resume];
 }
 
