@@ -74,8 +74,6 @@
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.foursquare.com/v2/venues/explore?%@", [self queryStringFromParams:params]]];
     
-    // return back task that can be cancelled, and can use task instead of having a loading flag (if pending request, ...)
-    
     NSURLSession *session = [NSURLSession sharedSession];
     return [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) callback(nil, error);
