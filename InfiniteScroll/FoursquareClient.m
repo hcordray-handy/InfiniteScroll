@@ -9,12 +9,9 @@
 #import "FoursquareClient.h"
 #import "FoursquareResponse.h"
 
-@interface FoursquareClient () {    
-    NSString *_client_id;
-    NSString *_client_secret;
-    NSString *_version;
-}
-@end
+static NSString *const clientId = @"PYYVAY4PWY5NCNB0VPDCD0RMF4AHRVE5NLXLZN5RCFPAZBYQ";
+static NSString *const clientSecret = @"IBI03EPTVC2JCQ3TFKZ1OEM5FN2V5THPQCWETQSXLEJO5FDQ";
+static NSString *const version = @"20130815";
 
 @implementation FoursquareClient
 
@@ -36,22 +33,10 @@
     return _sharedInstance;
 }
 
-- (instancetype)init {
-    self = [super init];
-    
-    if (self) {
-        _client_id = @"PYYVAY4PWY5NCNB0VPDCD0RMF4AHRVE5NLXLZN5RCFPAZBYQ";
-        _client_secret = @"IBI03EPTVC2JCQ3TFKZ1OEM5FN2V5THPQCWETQSXLEJO5FDQ";
-        _version = @"20130815";
-    }
-    
-    return self;
-}
-
 - (NSMutableDictionary *)defaultParams {
-    return [[NSMutableDictionary alloc] initWithDictionary:@{@"client_id":      _client_id,
-                                                             @"client_secret":  _client_secret,
-                                                             @"v":        _version}];
+    return [[NSMutableDictionary alloc] initWithDictionary:@{@"client_id":      clientId,
+                                                             @"client_secret":  clientSecret,
+                                                             @"v":              version}];
 }
 
 - (NSString *)queryStringFromParams:(NSDictionary *)params {
